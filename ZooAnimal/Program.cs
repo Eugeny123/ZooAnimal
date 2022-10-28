@@ -20,23 +20,29 @@ namespace ZooAnimal
                 char input = Console.ReadKey(true).KeyChar;
                 Console.WriteLine("You pressed "+ input);
                 
-                if (input ==1) 
+                if (input =='1') 
                 {
                     Console.WriteLine("Calling Lloyd.WhoAmi()");
                     lloyd.WhoAml();
                 }
-                else if (input == 2)
+                else if (input == '2')
                 {
                     Console.WriteLine("Calling Lusinda.WhoAmi()");
                     lusinda.WhoAml();
                 }
-                else if (input == 3)
+                else if (input =='3')
                 {
                     Elephant holder;
                     holder = lloyd;
                     lloyd = lusinda;
                     lusinda = holder;
                     Console.WriteLine("References have been swapped ");
+                }
+                else if (input =='4')
+                {
+                    lloyd = lusinda;
+                    lloyd.EarSize = 4321;
+                    lloyd.WhoAml();
                 }
                 else return;
                 Console.WriteLine();
