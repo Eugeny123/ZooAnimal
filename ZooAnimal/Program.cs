@@ -44,6 +44,10 @@ namespace ZooAnimal
                     lloyd.EarSize = 4321;
                     lloyd.WhoAml();
                 }
+                else if (input == '5')
+                {
+                    lusinda.SpeakTo(lloyd, "Hi, Lloyd");
+                }
                 else return;
                 Console.WriteLine();
 
